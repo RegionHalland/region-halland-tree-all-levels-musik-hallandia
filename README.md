@@ -1,4 +1,4 @@
-# Navigationsträd för musikhallandia inklusive kontaker och nyheter
+# Navigationsträd för musikhallandia inklusive kontakter och nyheter
 
 ## Hur man använder Region Hallands plugin "region-halland-tree-all-levels-musik-hallandia"
 
@@ -8,6 +8,14 @@ Nedan följer instruktioner hur du kan använda pluginet "region-halland-tree-al
 ## Användningsområde
 
 Denna plugin skapar ett navigationsträd för musikhallandia inklusive kontaker och nyheter
+
+
+## Licensmodell
+
+Denna plugin använder licensmodell GPL-3.0. Du kan läsa mer om denna licensmodell via den medföljande filen:
+```sh
+LICENSE (https://github.com/RegionHalland/region-halland-tree-all-levels-musik-hallandia/blob/master/LICENSE)
+```
 
 
 ## Installation och aktivering
@@ -59,10 +67,16 @@ OBS! Justera så att du hämtar aktuell version.
   @foreach ($myTree as $tree1)
     <p>
       <a href="{{ $tree1['page_url'] }}">{{ $tree1['post_title'] }}</a>
+      @if(count($tree1['children']) > 0)
+          <span>TOOGLE</span>
+      @endif
     <p>
     @foreach ($tree1['children'] as $tree2)
       <p class="ml1">
         <a href="{{ $tree2['page_url'] }}">{{ $tree2['post_title'] }}</a>
+        @if(count($tree2['children']) > 0)
+            <span>TOOGLE</span>
+        @endif
       <p>
       @foreach ($tree2['children'] as $tree3)
         <p class="ml2">
@@ -74,6 +88,12 @@ OBS! Justera så att du hämtar aktuell version.
 @endif
 ```
 
+
+## Versionhistorik
+
+### 1.1.0
+- Lagt till information om licensmodell
+- Bifogat fil med licensmodell
 
 ### 1.0.0
 - Första version

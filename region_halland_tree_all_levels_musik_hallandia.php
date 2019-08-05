@@ -6,9 +6,9 @@
 	/*
 	Plugin Name: Region Halland Tree All Levels Musik Hallandia
 	Description: Front-end-plugin för hela siten som tree-menu
-	Version: 1.0.0
+	Version: 1.1.0
 	Author: Roland Hydén
-	License: MIT
+	License: GPL-3.0
 	Text Domain: regionhalland
 	*/
 

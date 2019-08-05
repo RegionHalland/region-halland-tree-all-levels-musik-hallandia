@@ -1,8 +1,8 @@
 {
     "name": "regionhalland/region-halland-tree-all-levels-musik-hallandia",
-    "description": "Navigationsträd för musikhallandia inklusive kontaker och nyheter",
+    "description": "Navigationsträd för musikhallandia inklusive kontakter och nyheter",
     "type": "wordpress-plugin",
-    "license": "MIT",
+    "license": "GPL-3.0",
     "authors": [
         {
             "name": "Roland Hydén",
